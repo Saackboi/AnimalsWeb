@@ -1,0 +1,552 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #a3eeba;
+    transition: background 0.5s, color 0.5s;
+    color: #333;
+    max-width: 100%;
+    min-width: 768px;
+    overflow-x: hidden;
+}
+
+header {
+    background: url("img/fondoInicio.png") center/cover no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 4em 1em;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+#titulo-principal{
+    animation: fadeIn 1s ease-in-out;
+}
+
+.animalito {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 4em;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    z-index: 1000;
+}
+
+.animalito img{
+    width: 150px;
+}
+
+.animalito:hover {
+    transform: scale(1.1);
+}
+
+.container p{
+    font-size: 20px;
+}
+
+.info {
+    position: fixed;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 80%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    font-size: 1em;
+    z-index: 1001;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: #34bd56;
+    padding: 1.2em;
+    flex-wrap: wrap;
+    position: sticky; 
+    top: 0; 
+    z-index: 1000; 
+    max-width: 100%;
+}
+
+nav a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #1abc50;
+}
+
+.concepto{
+    background-color: #b1c6f5f6;
+}
+
+.concepto nav{
+    background: #003cff;
+}
+.concepto nav a:hover {
+    color: #b9c9ff;
+}
+
+.concepto footer{
+    background: #003cff;
+}
+
+.concepto header{
+    background: url("img/cabezaConcepto.png") center/cover no-repeat;
+}
+
+.concepto .learn-more-btn{
+    background-color: #003cff;
+}
+
+.concepto .learn-more-btn:hover{
+    background-color: #012aad;
+}
+
+.causas{
+    background-color: #e7e3cb;
+}
+
+.causas nav{
+    background: #5f5103;
+}
+.causas nav a:hover {
+    color: #ffe6b9;
+}
+
+.causas footer{
+    background: #5f5103;
+}
+
+.causas header{
+    background: url("img/cabezaCausas.png") center/cover no-repeat;
+}
+
+.causas .learn-more-btn{
+    background-color: #5f5103;
+}
+
+.causas .learn-more-btn:hover{
+    background-color: #413702;
+}
+
+.consecuencias{
+    background-color: #f8a9a9;
+}
+
+.consecuencias nav{
+    background: #c40101;
+}
+
+.consecuencias nav a:hover {
+    color: #ff837a;
+}
+
+.consecuencias footer{
+    background: #c40101;
+}
+
+.consecuencias header{
+    background: url("img/cabezaConsec.png") center/cover no-repeat;
+}
+
+.consecuencias .learn-more-btn{
+    background-color: #c40101;
+}
+
+.consecuencias .learn-more-btn:hover{
+    background-color: #bb0101;
+}
+
+.consecuencias .section{
+    border-left: 5px solid #c40101;
+}
+
+
+.estrategias{
+    background-color: #6e6e6e;
+}
+.estrategias nav{
+    background: #000000;
+}
+.estrategias nav a:hover {
+    color: #363636;
+}
+
+.estrategias footer{
+    background: #000000;
+}
+
+.estrategias header{
+    background: url("img/cabezaEstrate.png") center/cover no-repeat;
+}
+
+.estrategias .learn-more-btn{
+    background-color: #000000;
+}
+
+.estrategias .learn-more-btn:hover{
+    background-color: #9c9c9c;
+}
+
+.estrategias .section{
+    border-left: 5px solid #000000;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 100;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 30px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+.section {
+    padding: 20px;
+    margin: 20px 0;
+    border-left: 5px solid #1fbc1a;
+    background: #f9f9f9;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.section:hover {
+    transform: scale(1.02);
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.galleryOne{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.image-container {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.noticia {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.noticia:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.noticia img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.3s, transform 0.3s;
+}
+
+.noticia:hover img {
+    filter: brightness(70%);
+    transform: scale(1.02);
+}
+
+.noticia .noticiaTexto {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%) translateY(50px);
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0);
+    padding: 10px 20px;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.4s, transform 0.4s;
+}
+
+.noticia:hover .noticiaTexto {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+blockquote {
+    margin-top: 15px;
+    font-size: 1.2em;
+    font-style: italic;
+    text-align: center;
+    color: #333;
+    padding: 10px;
+    background: rgba(240, 240, 240, 0.8);
+    border-left: 5px solid #000000;
+    border-radius: 5px;
+}
+
+ul{
+    font-size: 20px;
+}
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.image-container:hover .image-text {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.image-container:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.image-text {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%) translateY(30px);
+    color: white;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+/* Popup */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn .1s ease-in-out;
+}
+
+.popup-content {
+    display: flex;
+    background: white;
+    width: 60%;
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.popup img {
+    width: 40%;
+    border-radius: 10px;
+}
+
+.popup-text {
+    width: 60%;
+    padding-left: 20px;
+}
+
+.popup-text h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.popup-text p {
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+
+.dark-mode .popup-content {
+    background: #333;
+    color: #f1f1f1;
+}
+
+.dark-mode .popup-text h2, 
+.dark-mode .popup-text p {
+    color: #f1f1f1;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #333;
+}
+
+.dark-mode .close-btn {
+    color: #f1f1f1; 
+}
+
+.toggle-theme {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: #34495e07;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dark-mode {
+    background-color: #1a1a1a;
+    color: #f1f1f1;
+}
+
+.dark-mode .container {
+    background-color: #33333388;
+    color: white;
+}
+
+.dark-mode .section {
+    background: #444;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background: #34bd56;
+    color: white;
+    margin-top: 20px;
+}
+
+.b1 {
+    background: url("img/FondoConcepto.png") center/cover no-repeat;
+}
+
+.b2 {
+    background: url("img/fondoCausas.png") center/cover no-repeat;
+}
+
+.b3 {
+    background: url("img/fondoConsecuencia.png") center/cover no-repeat;
+}
+
+.b4 {
+    background: url("img/fondoEstrategia.png") center/cover no-repeat;
+}
+
+/* Nueva clase para secciones con fondo de imagen */
+.background-section {
+    position: relative;
+    color: white;
+    margin: 20px 0;
+    font-size: 20px;
+    padding: 2em 0;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.background-section:hover {
+    transform: scale(1.02);
+}
+
+.background-section .section-content {
+    padding: 7em;
+    border-radius: 10px;
+}
+
+.background-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1; 
+}
+
+.background-section:hover::before {
+    opacity: 1; 
+}
+
+.background-section .section-content {
+    position: relative;
+    z-index: 2;
+}
+
+.learn-more-btn {
+    background-color: #34bd56;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.learn-more-btn:hover {
+    background-color: #279141;
+}
+

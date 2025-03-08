@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guardianes de la Naturaleza</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body class="concepto">
+    <button class="toggle-theme" onclick="toggleTheme()">Modo Oscuro</button>
+    <header id="titulo-principal">
+        <h1>Guardianes de la Naturaleza</h1>
+        <p>Deteniendo el Tráfico Ilegal de Especies</p>
+    </header>
+    <nav data-page="concepto">
+
+        <div class="menu" id="menu">
+            <a href="index.html">Inicio</a>
+            <a href="#concepto">Concepto</a>
+            <a href="Causas.html">Causas</a>
+            <a href="Consecuencias.html">Consecuencias</a>
+            <a href="Estrategias.html">Estrategias</a>
+        </div>
+    </nav>
+
+    <div id="animalito" class="animalito">
+        <img src="img/chopper.png" alt="">
+    </div>
+
+    <div id="info" class="info" style="display: none;">
+        <p>"¡Bienvenido! El tráfico ilegal de especies es un crimen que amenaza tanto a animales como a plantas. Está destruyendo nuestra biodiversidad. ¡Es hora de actuar!"</p>
+    </div>
+
+    <div class="container">
+        
+        <h1>¿Qué es el tráfico ilegal de especies?</h1>
+        <p>El tráfico ilegal de especies es el tercer negocio ilícito más lucrativo a nivel mundial, después del tráfico de drogas y armas. Implica el comercio no autorizado de animales y plantas silvestres, y puede incluir actividades como la caza furtiva, la captura y venta de especies protegidas, así como su transporte y distribución en mercados ilegales. Este comercio pone en peligro la supervivencia de muchas especies y viola leyes y tratados internacionales, como la <a href="https://www.cites.org/esp" target="_blank">CITES (Convención sobre el Comercio Internacional de Especies Amenazadas de Fauna y Flora Silvestres).</a></p>
+
+        <p>Las especies más afectadas incluyen elefantes, rinocerontes, tigres, y diversas aves, reptiles y plantas. Estas especies son explotadas por su marfil, cuerno, piel o por ser utilizadas como mascotas exóticas. El tráfico de especies no solo destruye la biodiversidad, sino que también apoya actividades criminales, como el narcotráfico y el lavado de dinero.</p>
+
+        <p>Además de su impacto ambiental, el tráfico ilegal de especies puede contribuir a la propagación de enfermedades zoonóticas, que son transmisibles entre animales y humanos. Esto aumenta el riesgo para la salud pública. Por ejemplo, el comercio de animales salvajes en mercados ilegales ha sido vinculado a la transmisión de virus como el COVID-19.</p>
+
+        <p>Para combatir este problema, organizaciones internacionales como CITES regulan el comercio de especies protegidas y trabajan con gobiernos y ONG para fortalecer la legislación y el cumplimiento de las leyes. Sin embargo, el tráfico sigue siendo un desafío debido a la alta demanda en mercados, especialmente en algunos países asiáticos, donde partes de animales como el cuerno de rinoceronte y el marfil son muy valoradas.</p>
+
+        <p>La lucha contra el tráfico ilegal de especies requiere un esfuerzo conjunto entre gobiernos, comunidades locales y organizaciones internacionales para aumentar la conciencia pública, mejorar las leyes de protección y garantizar la conservación de especies vitales para nuestros ecosistemas.</p>
+
+        <br>
+        <hr>
+        <br>
+
+        <h2>Especies más comunes en el tráfico ilegal</h2>
+        <p>Este tráfico involucra la extracción de animales de sus hábitats naturales, donde son sometidos a condiciones extremas. Entre las especies más comunes que sufren este tráfico se encuentran <b>(Click a la imagen para más información)</b>:</p>
+        
+        <div class="gallery">
+            <div class="image-container" onclick="showPopup('mamiferos.png', 'Mamíferos', 'El tráfico ilegal de mamíferos es una de las principales amenazas para varias especies que ya están en peligro de extinción. Entre los mamíferos más afectados están los elefantes, debido a la caza furtiva por sus colmillos de marfil, que son altamente demandados en mercados ilegales, especialmente en Asia. Los tigres también están en grave peligro debido al tráfico de sus pieles, huesos y órganos, que se utilizan en medicina tradicional y como objetos de lujo. Además, los pangolines son capturados principalmente por sus escamas, que son muy valoradas en algunos países, y su carne, que se considera un manjar. El tráfico de mamíferos no solo afecta a las especies en riesgo de extinción, sino que también desestabiliza los ecosistemas en los que habitan.')">
+                <img src="img/imgAnimales/mamiferos.png" alt="Mamíferos">
+                <div class="image-text">Mamíferos</div>
+            </div>
+            <div class="image-container" onclick="showPopup('aves.png', 'Aves', 'El tráfico ilegal de aves es especialmente dañino para las especies de aves exóticas que son valoradas como mascotas. Entre las aves más traficadas se encuentran los loros y guacamayos, que a menudo son capturados en su hábitat natural para ser vendidos en mercados ilegales. Los loros africanos, en particular, son víctimas de la caza furtiva, debido a la alta demanda de su colorido plumaje y su capacidad para imitar sonidos humanos. Además, muchas especies de aves en peligro de extinción, como el cóndor de California y el guacamayo azul, son cazadas y vendidas a coleccionistas. Este tráfico no solo pone en peligro la supervivencia de las aves, sino que también interrumpe sus poblaciones y ecosistemas.')">
+                <img src="img/imgAnimales/aves.png" alt="Aves">
+                <div class="image-text">Aves</div>
+            </div>
+            <div class="image-container" onclick="showPopup('reptiles.png', 'Reptiles', 'Los reptiles también están en riesgo debido al tráfico ilegal, que está impulsado por la demanda de mascotas exóticas y productos derivados de ellos. Las serpientes pitón, las iguanas y las tortugas son algunos de los reptiles más afectados por el comercio ilegal. En particular, las tortugas marinas, que son capturadas por sus caparazones y huevos, son víctimas frecuentes del tráfico. Muchas de las especies de reptiles más traficadas, como la tortuga de carey, están catalogadas como en peligro crítico de extinción debido a la caza furtiva. Este tráfico no solo amenaza a las especies, sino que también afecta la biodiversidad marina y terrestre.')">
+                <img src="img/imgAnimales/reptiles.png" alt="Reptiles">
+                <div class="image-text">Reptiles</div>
+            </div>
+            <div class="image-container" onclick="showPopup('peces.png', 'Peces', ' El tráfico ilegal de peces incluye la captura y venta de especies raras y exóticas para acuarios privados, como los peces loro y los peces ángel, que son muy apreciados por su color y belleza. Sin embargo, los tiburones también son víctimas del tráfico ilegal, especialmente por sus aletas, que se utilizan para la sopa de aletas de tiburón, un manjar muy codiciado en algunas culturas. Esta práctica está llevando a muchas especies de tiburones al borde de la extinción. El tráfico ilegal de peces también afecta a los ecosistemas marinos, ya que la sobrepesca de especies clave puede desestabilizar las cadenas alimentarias.')">
+                <img src="img/imgAnimales/peces.png" alt="Peces">
+                <div class="image-text">Peces</div>
+            </div>
+            <div class="image-container" onclick="showPopup('insectos.png', 'Insectos', 'Aunque menos visible, el tráfico ilegal de insectos es una preocupación creciente. Los insectos más traficados incluyen mariposas raras y escarabajos, que a menudo son recolectados para ser vendidos a coleccionistas. Mariposas como la Attacus atlas y especies de escarabajos del género Dynastinae tienen un alto valor en el mercado negro. Además, ciertos insectos, como los escarabajos peloteros, también están siendo extraídos de sus hábitats naturales para satisfacer la demanda de coleccionistas. El tráfico ilegal de insectos afecta a las poblaciones locales, y en muchos casos, contribuye a la disminución de especies que tienen un papel crucial en los ecosistemas, como la polinización.')">
+                <img src="img/imgAnimales/insectos.png" alt="Insectos">
+                <div class="image-text">Insectos</div>
+            </div>
+        </div>
+
+        <!-- Popup -->
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close-btn" onclick="closePopup()">&times;</span>
+                <img id="popup-img" src="" alt="">
+                <div class="popup-text">
+                    <h2 id="popup-title"></h2>
+                    <p id="popup-info"></p>
+                </div>
+            </div>
+        </div>
+        <button class="learn-more-btn" onclick="window.location.href='index.html'">Regresar al inicio</button>
+    </div>
+
+    <footer data-page="concepto">
+        <p>© 2025 Universidad Tecnológica de Panamá | Kevin Sánchez | Proyecto Semestral Ecología</p>
+    </footer>
+
+    <script>
+        function toggleTheme() {
+            
+            document.body.classList.toggle("dark-mode");
+
+        
+            if (document.body.classList.contains("dark-mode")) {
+                localStorage.setItem("theme", "dark");
+            } else {
+                localStorage.setItem("theme", "light"); 
+            }
+        }
+
+        
+        window.onload = function() {
+            const theme = localStorage.getItem("theme");
+            if (theme === "dark") {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode"); 
+            }
+        }
+
+        const animalito = document.getElementById('animalito');
+        const info = document.getElementById('info');
+
+      
+        function mostrarInfo() {
+            info.style.display = 'block';
+            
+            
+            setTimeout(() => {
+                info.style.display = 'none'; 
+            }, 5000);
+        }
+
+        
+        animalito.addEventListener('click', mostrarInfo);
+
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            mostrarInfo();
+        });
+
+        function showPopup(imgSrc, title, info) {
+            document.getElementById('popup-img').src = "img/imgAnimales/" + imgSrc;
+            document.getElementById('popup-title').innerText = title;
+            document.getElementById('popup-info').innerText = info;
+            document.getElementById('popup').style.display = "flex";
+        }
+
+        function closePopup() {
+            document.getElementById('popup').style.display = "none";
+        }
+    </script>
+</body>
+</html>

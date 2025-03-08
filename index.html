@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guardianes de la Naturaleza</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body class="inicio">
+    <button class="toggle-theme" onclick="toggleTheme()">Modo Oscuro</button>
+    <header id="titulo-principal">
+        <h1>Guardianes de la Naturaleza</h1>
+        <p>Deteniendo el Tráfico Ilegal de Especies</p>
+    </header>
+    <nav>
+        <div class="menu" id="menu">
+            <a href="index.html">Inicio</a>
+            <a href="Concepto.html">Concepto</a>
+            <a href="Causas.html">Causas</a>
+            <a href="Consecuencias.html">Consecuencias</a>
+            <a href="Estrategias.html">Estrategias</a>
+        </div>
+    </nav>
+
+    <div id="animalito" class="animalito">
+        <img src="img/chopper.png" alt="">
+    </div>
+
+    <div id="info" class="info" style="display: none;">
+        <p>"¡Hola! Soy Chopper, y quiero ayudarte a entender cómo el tráfico ilegal de especies amenaza a los animales. ¡Protejamos juntos su futuro!"</p>
+
+    </div>
+
+    <div class="container">
+        <section id="introduccion" class="section">
+            <h2>Introducción</h2>
+            <p>El tráfico ilegal de especies es una de las actividades delictivas más lucrativas y perjudiciales para el medio ambiente. Cada año, miles de animales y plantas son extraídos de su hábitat natural para ser vendidos como mascotas, productos exóticos o ingredientes de medicina tradicional. Esta práctica no solo pone en peligro a las especies afectadas, sino que también altera los ecosistemas y contribuye a la extinción de numerosas formas de vida.</p>
+        
+            <p>El propósito de esta página web es sensibilizar al público sobre el grave problema del tráfico ilegal de especies, proporcionando información clave y recursos que fomenten la conciencia sobre los efectos devastadores de esta actividad. A pesar de haber sido desarrollada como un proyecto educativo por estudiantes, su objetivo es llegar a toda la sociedad, invitando a cada persona a involucrarse en la protección de la biodiversidad y a tomar acciones contra este crimen que afecta a la naturaleza y a las generaciones futuras.</p>
+        </section>
+
+        <br>
+        <hr>
+        <br>
+
+        <h2>Conoce más sobre este tema</h2>
+        <section class="background-section b1" id="concepto">
+            <div class="section-content">
+                <h2>¿Sabías que el tráfico ilegal de animales está poniendo en peligro a muchas especies?</h2>
+                <p>El comercio ilegal de animales silvestres afecta a miles de especies protegidas, muchas de ellas al borde de la extinción. La caza furtiva, la captura y la venta ilegal están destruyendo ecosistemas enteros, poniendo en riesgo la estabilidad de la fauna y, en última instancia, nuestra salud.</p>
+                <button class="learn-more-btn" onclick="window.location.href='Concepto.html'">Ver más</button>
+            </div>
+        </section>
+
+        <section class="background-section b2" id="causas">
+            <div class="section-content">
+                <h2>¿Por qué sigue ocurriendo?</h2>
+                <p>La alta demanda de animales exóticos como mascotas, la pobreza que empuja a las comunidades a cazar y la falta de control y conciencia sobre las consecuencias son algunas de las razones.</p>
+                <button class="learn-more-btn" onclick="window.location.href='Causas.html'">Ver más</button>
+            </div>
+        </section>
+
+        <section class="background-section b3" id="consecuencias">
+            <div class="section-content">
+                <h2>¿Cuáles son las consecuencias?</h2>
+                <p>El tráfico ilegal de animales está provocando la extinción de especies, desequilibrando los ecosistemas y, en algunos casos, permitiendo la propagación de enfermedades zoonóticas (aquellas que se transmiten de los animales a los humanos). Además, está afectando la economía global, especialmente sectores como el ecoturismo y la agricultura, que dependen de la salud de la fauna.</p>
+                <button class="learn-more-btn" onclick="window.location.href='Consecuencias.html'">Ver más</button>
+            </div>
+        </section>
+
+        <section class="background-section b4" id="estrategias">
+            <div class="section-content">
+                <h2>¿Qué podemos hacer?</h2>
+                <p>Es urgente fortalecer las leyes y regulaciones para frenar este comercio. Educar a la población sobre el impacto del tráfico ilegal de animales y promover alternativas económicas sostenibles para las comunidades vulnerables son estrategias fundamentales. También es crucial utilizar tecnología avanzada para monitorear y detener el tráfico ilegal a nivel global.</p>
+                <button class="learn-more-btn" onclick="window.location.href='Estrategias.html'">Ver más</button>
+            </div>
+        </section>
+
+        <br>
+        <hr>
+        <br>
+
+        <section class="section" id="conclusion">
+            <h2>Un Compromiso de Todos</h2>
+            <p>Proteger la biodiversidad es una responsabilidad global. Detener el comercio ilegal de especies es crucial para el equilibrio de los ecosistemas y la preservación de nuestro planeta.</p>
+            
+            <div class="galleryOne">
+                <img src="https://www.gob.mx/cms/uploads/image/file/257288/vidasilvestre_2.png" alt="Cuerno de Rinoceronte" class="img-featured" width="900px">
+            <blockquote>"🌿✨ ¡Gracias por visitar este sitio y ser parte del cambio para proteger la vida silvestre! 🐾🌍</blockquote>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>© 2025 Universidad Tecnológica de Panamá | Kevin Sánchez | Proyecto Semestral Ecología</p>
+    </footer>
+
+    <script>
+        function toggleTheme() {
+
+            document.body.classList.toggle("dark-mode");
+
+            if (document.body.classList.contains("dark-mode")) {
+                localStorage.setItem("theme", "dark"); 
+            } else {
+                localStorage.setItem("theme", "light");
+            }
+        }
+
+      
+        window.onload = function() {
+            const theme = localStorage.getItem("theme");
+            if (theme === "dark") {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode"); 
+            }
+        }
+
+      
+        const animalito = document.getElementById('animalito');
+        const info = document.getElementById('info');
+
+      
+        animalito.addEventListener('click', () => {
+          
+            info.style.display = 'block';
+
+            setTimeout(() => {
+                info.style.display = 'none'; 
+            }, 5000);
+        });
+    </script>
+</body>
+</html>
